@@ -1,0 +1,70 @@
+/* estiliza o corpo/fundo da pagina */
+body {
+  background-image: url("./assets/imagen.png");
+  background-size: cover; /*cobre toda a tela*/
+  background-position: center; /*centraliza*/
+  background-repeat: no-repeat; /*nao repete a imagem*/
+  background-attachment: fixed; /*imagem fixa ao rolar tela*/
+  margin: 0;
+  padding: 0;
+  font-size: arial, sans-serif;
+}
+/* a div principal */
+#container {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 100px auto; /*centraliza a div*/
+  padding: 20px;
+  border-radius: 15px; /*bordas arredondadas*/
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /*sombra leve*/
+  text-align: center;
+  max-width: 400px;
+}
+/* estilo do titulo*/
+h2 {
+  text-align: center;
+}
+/*campos de input e textarea */
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 12px; /*espaço entre os campos*/
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3; /*ao passar o mouse encima*/
+}
+#resultado {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+::placeholder {
+  color: black;
+}
+#rodape {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+/*estilo adaptado para celular(telas menores que 600px)*/
+@media (max-width: 600px) {
+  #container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
